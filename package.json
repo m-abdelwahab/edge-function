@@ -2,7 +2,11 @@
   "name": "edge-functions-examples",
   "description": "Explore a library of reference examples for learning about Edge Functions on Netlify.",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "dev": "netlify dev"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/netlify/edge-functions-examples.git"
@@ -14,5 +18,10 @@
     "url": "https://github.com/netlify/edge-functions-examples/issues"
   },
   "homepage": "https://github.com/netlify/edge-functions-examples#readme",
-  "dependencies": {}
+  "devDependencies": {
+    "drizzle-kit": "^0.30.1"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.38.3"
+  }
 }
